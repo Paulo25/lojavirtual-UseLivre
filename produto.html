@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8"/>
+	<title>Loja Virtual</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<meta name="viewport" content="width=device-width"/> <!--tag define lagura da tela -->
+	<link rel="stylesheet"  href="css/animate.css"/>
+	<style>
+		.navbar-header button{
+			color: #fff;
+		}
+		.fullscreen{
+			width: 100%;
+		}
+		main{
+			padding-top: 50px;
+		}
+		footer{
+			background: #333;
+			color: #fff;
+			text-align: center;
+			padding: 20px 0px;
+		}
+		.tab-pane{
+			padding: 10px 5px;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<nav class="navbar navbar-fixed-top navbar-inverse"> <!--fixa o menu no topo e inverte a cor para preto-->
+			<div class="container">
+			<div class="navbar-header">
+		<a href="index.html" class="navbar-brand">UseLivre</a> <!--classe de marca do site-->
+		<button class="navbar-toggle" type="button" data-target=".navbar-collapse" data-toggle="collapse">Menu</button> <!--ixibe algo escondi-->
+		</div>
+		<div class="collapse navbar-collapse"> <!--collapse esconde elementos-->
+			<ul class="nav navbar-nav"> <!--coloca os elementos em lista-->
+				<li><a href="#novidades">Novidades</a></li>
+				<li><a href="#maisVendidos">Mais Vendidos</a></li>
+				<li class="dropdown"> <!--Indetifica que tem um menu-->
+					<a href="#" class="data-toggle" data-toggle="dropdown">Camisetas<span class="caret"></span></a> <!--ixebe conteudo escondido dentro do menu-->
+					<ul class="dropdown-menu"> <!--esconde a lista-->
+						<li><a href="#">Masculino</a></li>
+						<li><a href="#">Feminino</a></li>
+						<li><a href="#">Infantil</a></li>
+					</ul>	
+				</li>
+			</ul>
+			<form class="navbar-form navbar-right">
+				<div class="form-group">
+					<input type="text" class="form-control" placeholder="Digite o que você procura">
+				</div>
+				<input type="submit" value="Buscar" class="btn btn-default">
+			</form>
+		</div>
+		</div>	
+		</nav>
+	</header>
+	
+		
+
+	<main>
+		
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4">
+					<img src="img/img11.jpg" class="img-responsive img-thumbnail" alt="produto blazer">
+				</div>
+		<div class="col-sm-8">
+			<div class="text-center">
+				<h1>Blazer Cinza importada</h1>
+				<h3>R$ 259,00</h3>
+				<a href="carrinho.html" class="btn btn-primary btn-lg">Comprar</a><!--botão largo-->
+			</div>
+			<div class="row">
+			<ul class="nav nav-tabs"><!--cria abas-->
+				<li class="nav active"><a href="#descricao" data-toggle="tab">Descrição</a></li><!--se comportar com abas-->
+				<li class="nav"><a href="#Informacoes" data-toggle="tab">Informações tecnicas</a></li><!--se comportar com abas-->
+			</ul>
+			<div class="tab-content"> <!--posso colocar qual quer conteudo-->
+				<div class="tab-pane fade in active" id="descricao"> <!--um painel de uma abas ativado-->
+					<p>Blazer Cinza em algodão com caimento perfeito proporcionando leveza e conforto nos movimentos.</p>
+					<p>Blazar meia manga, estilo masculino importado</p>
+				</div>
+					<div class="tab-pane fade" id="Informacoes"><!--um painel de uma abas-->
+					<table class="table table-reponsive"><!--Tabela estilizada e reponsiva-->
+						<tbody><!--corpo da tabela-->
+							<tr><!--linha da tabela-->
+								<td>Tecido</td><!--colunas-->
+								<td>Algodão</td>
+							</tr>
+							<tr>
+								<td>Tamanhos</td>
+								<td>P, M, G, GG</td>
+							</tr>
+							<tr>
+								<td>Fabricante</td>
+								<td>Use Livre</td>
+							</tr>
+							<tr>
+								<td>Pais de Origem</td>
+								<td>Brasil</td>
+							</tr>
+						</tbody>
+					</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+	</main>
+
+	<footer>
+		Paulo Vitor n 1</br>
+		(71) 3408-4740
+	</footer>	
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	
+
+
+</body>
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8"/>
+	<title>Loja Virtual</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet"  href="css/animate.css"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> <!--tag define lagura da tela -->
+
+	
+	
+	<style>
+		.navbar-header button{
+			color: #fff;
+		}
+		.fullscreen{
+			width: 100%;
+		}
+		main{
+			padding-top: 50px;
+		}
+		footer{
+			background: #333;
+			color: #fff;
+			text-align: center;
+			padding: 20px 0px;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<nav class="navbar navbar-fixed-top navbar-inverse"> <!--fixa o menu no topo e inverte a cor para preto-->
+			<div class="container">
+			<div class="navbar-header">
+		<a href="#home" class="navbar-brand">UseLivre</a> <!--classe de marca do site-->
+		<button class="navbar-toggle" type="button" data-target=".navbar-collapse" data-toggle="collapse">Menu</button> <!--ixibe algo escondi-->
+		</div>
+		<div class="collapse navbar-collapse"> <!--collapse esconde elementos-->
+			<ul class="nav navbar-nav"> <!--coloca os elementos em lista-->
+				<li><a href="#novidades">Novidades</a></li>
+				<li><a href="#maisVendidos">Mais Vendidos</a></li>
+				<li class="dropdown"> <!--Indetifica que tem um menu-->
+					<a href="#" class="data-toggle" data-toggle="dropdown">Camisetas<span class="caret"></span></a> <!--ixebe conteudo escondido dentro do menu-->
+					<ul class="dropdown-menu"> <!--esconde a lista-->
+						<li><a href="#">Masculino</a></li>
+						<li><a href="#">Feminino</a></li>
+						<li><a href="#">Infantil</a></li>
+					</ul>	
+				</li>
+			</ul>
+			<form class="navbar-form navbar-right">
+				<div class="form-group">
+					<input type="text" class="form-control" placeholder="Digite o que você procura">
+				</div>
+				<input type="submit" value="Buscar" class="btn btn-default">
+			</form>
+		</div>
+		</div>	
+		</nav>
+	</header>
+	
+
+
+	<main>
+		<div class="container-fluid"><!--coneiter-->
+			<div class="row" id="home"><!--linha-->
+				<div id="carousel" class="carousel slide" data-ride="carousel"> <!--o carrossel com seu atributo-->
+					<div class="carousel-inner" role="listbox"><!--mostra que tenha uma lista de imagens para passar-->
+						<div class="item active"><!--cada img é um item na lista-->	
+						<img src="img/banner11.jpg" alt="Moda blazer" class="fullscreen"/><!--ocupar tela inteira-->
+						</div>
+						<div class="item"><!--cada img é um item na lista-->
+						<img src="img/banner2.jpg" alt="Moda Masculino" class="fullscreen"/><!--ocupar tela inteira-->
+						</div>
+						<div class="item"><!--cada img é um item na lista-->
+						<img src="img/banner22.png" alt="Moda Masculino" class="fullscreen"/><!--ocupar tela inteira-->
+						</div>
+					</div>
+						<a href="#carousel" data-slide="prev" class="left carousel-control" ><span class="glyphicon glyphicon-chevron-left"></span></a>
+						<a href="#carousel" data-slide="next" class="right carousel-control" ><span class="glyphicon glyphicon-chevron-right"></span></a>
+				</div>	
+			</div>
+		</div>
+		<div class="container-fluid">
+		<div class="row">
+			<div class="col-xs-12 col-sm-3">
+		<div class="text-center">
+			<h3>Categorias</h3>
+			</div>	
+				<ul class="list-group">
+					<li class="list-group-item"><a href="">Camistas Masculinas</a></li>
+					<li class="list-group-item"><a href="">Camistas Femininas</a></li>
+					<li class="list-group-item"><a href="">Roupas de Inverno</a</li>
+					<li class="list-group-item"><a href="">Roupas de Verão</a/li>
+				</ul>
+				</div>
+				<div class="col-xs-12 col-sm-9">
+
+					<div id="novidades">
+						<h3 class="text-center">Novidades</h3>
+					</div>
+					
+		<div class="col-xs-12 col-md-4 thumbnail text-center wow fadeInUp" data-wow-delay="1s" >
+			<figure>
+				<img src="img/img1.jpg" alt="Blazer Cinza" />
+				<div>
+					<h4>Blazer Cinza</h4>
+					<p>Blazer cinza por um preço acessivel e com pano de qualidade</p>
+				</div>
+			</figure>
+			<div class="btn-group">
+				<a class=" btn btn-default" href="#">R$ 190,00</a>
+				<a class="btn btn-primary" href="produto.html"><span class="glyphicon-shoopping-cart"></span>Comprar</a>
+			</div>
+		</div>
+
+		<div class="col-xs-12 col-md-4 thumbnail text-center wow fadeInUp" data-wow-delay="1s"> <!--borda-->
+			<figure>
+			<img src="img/img2.jpg" alt="blazer importado"/>
+			<div>
+			<h4>Blazer da Grif</h4>
+			<p>Blazer azul-marinho por um preço acessivel e com pano de qualidade</p>
+			</div>
+			</figure>
+			<div class="btn-group">
+			<a href="#" class="btn btn-default">R$ 210,00</a>
+			<a href="#" class="btn btn-primary"><span class="glyphicon glyphicon-shoopping-cart"></span>Comprar</a>
+			</div>
+		</div>
+		<div class="col-xs-12 col-md-4 thumbnail text-center wow fadeInUp" data-wow-delay="1s" > <!--borda-->
+			<figure>
+			<img src="img/img2.jpg" alt="blazer importado"/>
+			<div>
+			<h4>Blazer da Grif</h4>
+			<p>Blazer azul-marinho por um preço acessivel e com pano de qualidade</p>
+			</div>
+			</figure>
+			<div class="btn-group">
+			<a href="#" class="btn btn-default">R$ 210,00</a>
+			<a href="#" class="btn btn-primary"><span class="glyphicon glyphicon-shoopping-cart"></span>Comprar</a>
+			</div>
+		</div>
+		
+
+		
+
+					<div id="maisVendidos">
+						<h3 class="text-center">Mais Vendidos</h3>
+					</div>
+					
+		<div class="col-xs-12 col-md-4 thumbnail text-center wow fadeInUp" data-wow-delay="1s" >
+			<figure>
+				<img src="img/img1.jpg" alt="Blazer Cinza" />
+				<div>
+					<h4>Blazer Cinza</h4>
+					<p>Blazer cinza por um preço acessivel e com pano de qualidade</p>
+				</div>
+			</figure>
+			<div class="btn-group">
+				<a class=" btn btn-default" href="#">R$ 190,00</a>
+				<a class="btn btn-primary" href="#"><span class="glyphicon-shoopping-cart"></span>Comprar</a>
+			</div>
+		</div>
+
+		<div class="col-xs-12 col-md-4 thumbnail text-center wow fadeInUp" data-wow-delay="1s"> <!--borda-->
+			<figure>
+			<img src="img/img2.jpg" alt="blazer importado"/>
+			<div>
+			<h4>Blazer da Grif</h4>
+			<p>Blazer azul-marinho por um preço acessivel e com pano de qualidade</p>
+			</div>
+			</figure>
+			<div class="btn-group">
+			<a href="#" class="btn btn-default">R$ 210,00</a>
+			<a href="#" class="btn btn-primary"><span class="glyphicon glyphicon-shoopping-cart"></span>Comprar</a>
+			</div>
+		</div>
+		<div class="col-xs-12 col-md-4 thumbnail text-center wow fadeInUp" data-wow-delay="1s" > <!--borda-->
+			<figure>
+			<img src="img/img2.jpg" alt="blazer importado"/>
+			<div>
+			<h4>Blazer da Grif</h4>
+			<p>Blazer azul-marinho por um preço acessivel e com pano de qualidade</p>
+			</div>
+			</figure>
+			<div class="btn-group">
+			<a href="#" class="btn btn-default">R$ 210,00</a>
+			<a href="#" class="btn btn-primary"><span class="glyphicon glyphicon-shoopping-cart"></span>Comprar</a>
+			</div>
+		</div>
+		
+				</div>
+			
+
+
+
+
+	</main>
+
+	<footer>
+		Paulo Vitor n 1</br>
+		(71) 3408-4740
+	</footer>	
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/wow.min.js"></script>
+		
+		<script type="text/javascript" src="js/wow.min.js"></script>
+
+							<script>
+								$(function() {
+									new WOW().init();
+								});
+							</script>
+		
+
+
+</body>
+</html>
